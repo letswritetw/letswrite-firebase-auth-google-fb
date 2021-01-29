@@ -1,0 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+pre {
+  white-space: normal;
+}
