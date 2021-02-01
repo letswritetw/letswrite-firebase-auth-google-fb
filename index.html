@@ -41,18 +41,40 @@
       <h2>Google</h2>
       <h3>選擇登入方式</h3>
       <div>
-        <input id="popup" type="radio" name="googleType" value="popup" checked="checked"/>
-        <label for="popup">Popup</label>
+        <input id="g-popup" type="radio" name="googleType" value="popup" checked="checked"/>
+        <label for="g-popup">Popup</label>
       </div>
       <div>
-        <input id="redirect" type="radio" name="googleType" value="redirect"/>
-        <label for="redirect">Redirect</label>
+        <input id="g-redirect" type="radio" name="googleType" value="redirect"/>
+        <label for="g-redirect">Redirect</label>
       </div>
       <h3>點擊登入</h3>
       <button id="google" type="button">Google 登入</button>
-      <button id="googleOut" type="button">Google 登出</button>
       <pre><code id="googleCode">登入完後的資料會出現在這</code></pre>
       <pre><code id="googleError">有錯誤的話會出現在這</code></pre>
+      <hr/>
+      <h2>Facebook</h2>
+      <h3>選擇登入方式</h3>
+      <div>
+        <input id="fb-popup" type="radio" name="fbType" value="popup" checked="checked"/>
+        <label for="fb-popup">Popup</label>
+      </div>
+      <div>
+        <input id="fb-redirect" type="radio" name="fbType" value="redirect"/>
+        <label for="fb-redirect">Redirect</label>
+      </div>
+      <h3>點擊登入</h3>
+      <button id="fb" type="button">Facebook 登入</button>
+      <pre><code id="fbCode">登入完後的資料會出現在這</code></pre>
+      <pre><code id="fbError">有錯誤的話會出現在這</code></pre>
+      <hr/>
+      <section class="d-none" id="out">
+        <h2>登出 / 刪除</h2>
+        <button id="signOut" type="button">登出</button>
+        <button id="deleteUser" type="button">刪除我的帳號</button>
+        <pre><code id="userError">登出、刪除有錯誤的話會出現在這</code></pre>
+        <hr/>
+      </section>
     </div>
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>

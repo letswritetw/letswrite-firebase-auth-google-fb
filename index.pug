@@ -54,19 +54,52 @@ html(lang="zh-TW")
       h2 Google
       h3 選擇登入方式
       div
-        input#popup(type="radio", name="googleType", value="popup", checked)
-        label(for="popup") Popup
+        input#g-popup(type="radio", name="googleType", value="popup", checked)
+        label(for="g-popup") Popup
       div
-        input#redirect(type="radio", name="googleType", value="redirect")
-        label(for="redirect") Redirect
+        input#g-redirect(type="radio", name="googleType", value="redirect")
+        label(for="g-redirect") Redirect
       h3 點擊登入
       button#google(type="button") Google 登入
-      button#googleOut(type="button") Google 登出
 
       pre
         code#googleCode 登入完後的資料會出現在這
       pre
         code#googleError 有錯誤的話會出現在這
+      
+      hr
+
+      h2 Facebook
+
+      h3 選擇登入方式
+      div
+        input#fb-popup(type="radio", name="fbType", value="popup", checked)
+        label(for="fb-popup") Popup
+      div
+        input#fb-redirect(type="radio", name="fbType", value="redirect")
+        label(for="fb-redirect") Redirect
+
+      h3 點擊登入
+      button#fb(type="button") Facebook 登入
+
+      pre
+        code#fbCode 登入完後的資料會出現在這
+      pre
+        code#fbError 有錯誤的話會出現在這
+
+
+      hr
+
+      section#out.d-none
+
+        h2 登出 / 刪除
+        button#signOut(type="button") 登出
+        button#deleteUser(type="button") 刪除我的帳號
+
+        pre
+          code#userError 登出、刪除有錯誤的話會出現在這
+
+        hr
 
     script(src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js")
     script(src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js")
