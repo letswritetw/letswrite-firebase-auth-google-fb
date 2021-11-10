@@ -41,7 +41,12 @@
       <h1 class="text-center">Firebase 第三方登入 - Google、FB</h1>
       <hr/>
       <p class="text-center">筆記文：<a href="" target="_blank">Let's Write</a></p>
-      <blockquote><a href="v9.html">Firebase V9 版本請點此</a></blockquote>
+      <blockquote><a href="index.html">Firebase V8 版本請點此</a></blockquote>
+      <h2>先安裝 firebase Package</h2>
+      <pre><code>npm install firebase<br/><br/>
+或<br/><br/>
+yarn add firebase</code></pre>
+      <hr/>
       <h2>Google</h2>
       <h3>選擇登入方式</h3>
       <div>
@@ -80,22 +85,6 @@
         <hr/>
       </section>
     </div>
-    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
-    <script>
-      var firebaseConfig = {
-        apiKey: "AIzaSyCFpMDt4vtV96zycNpJTxo73XvA4q9MIZQ",
-        authDomain: "letswrite-helpful-btn.firebaseapp.com",
-        databaseURL: "https://letswrite-helpful-btn.firebaseio.com",
-        projectId: "letswrite-helpful-btn",
-        storageBucket: "letswrite-helpful-btn.appspot.com",
-        messagingSenderId: "498690047881",
-        appId: "1:498690047881:web:dcb559143db6f145e26b58",
-        measurementId: "G-9YZ3G343K3"
-      };
-      firebase.initializeApp(firebaseConfig);
-      
-    </script>
-    <script src="dist/main.min.js"></script>
+    <script src="dist/v9.min.js"></script>
   </body>
 </html>
